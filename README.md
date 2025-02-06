@@ -22,6 +22,7 @@ This repository contains a **modular Neovim configuration** using Lazy.nvim as t
 │   │   ├── visual_multi.lua  # Multi-cursor support
 │   │   ├── mason.lua         # LSP installer manager
 │   │   ├── lualine.lua       # Statusline setup
+│   │   ├── comment.lua       # Easy Commenting 
 │   ├── vim-options.lua       # General Neovim settings 
 │   ├── plugins.lua           # Plugin pointer file
 ```
@@ -50,7 +51,7 @@ This setup is **plugin-based**, meaning all configurations are modular and insta
 ### 🖥 **Development Enhancements**
 - **vim-visual-multi** – Multi-cursor support (`<C-n>` to select next match).
 - **Telescope-ui-select.nvim** – Better UI selection for commands.
-
+- **Comment.nvim** – Allows for keycommand commenting.
 ---
 
 ## ⌨ **Keybindings**
@@ -72,6 +73,7 @@ This setup includes **custom keybindings**, managed by `which-key.nvim`.
 | `Ctrl + J` | Add Cursor Below |
 | `Ctrl + K` | Add Cursor Above |
 | `Ctrl + N` | Select next match (Visual Multi) |
+| `Ctrl + /` | Comment toggle |
 
 ---
 
