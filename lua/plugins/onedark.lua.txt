@@ -1,0 +1,17 @@
+return {
+  "navarasu/onedark.nvim",
+  config = function()
+    require("onedark").setup {
+      style = "darker",
+      transparent = true,
+      term_colors = true,
+      ending_tildes = false,
+      highlights = {
+        Search = { bg = "#ffcc00", fg = "#000000" },
+        Visual = { bg = "#ffff00", fg = "#000000" },
+        CursorLine = { bg = "#333333" },
+      },
+    }
+    require("onedark").load()
+  end
+}
