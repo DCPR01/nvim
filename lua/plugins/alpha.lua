@@ -1,3 +1,4 @@
+
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
@@ -23,9 +24,10 @@ return {
 
     -- Buttons for Alpha Dashboard
     dashboard.section.buttons.val = {
-        dashboard.button("f", "  Find Files", ":Telescope find_files<CR>:AlphaClose<CR>"),
-        dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>:AlphaClose<CR>"),
-        dashboard.button("t", "  Find Text", ":Telescope live_grep<CR>:AlphaClose<CR>"),
+        dashboard.button("f", "  Find Files", ":Telescope find_files<CR>"), --":Telescope find_files<CR>:AlphaClose<CR>"
+        dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
+        dashboard.button("t", "  Find Text", ":Telescope live_grep<CR>"),
+        dashboard.button("l", "󰒲  Lazy.nvim", ":Lazy<CR>"), -- ✅ New Lazy.nvim button
         dashboard.button("q", "  Quit", ":qa<CR>"),
     }
 
