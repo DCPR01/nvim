@@ -89,7 +89,7 @@ To install this Neovim setup, follow these steps:
 
 2. **Clone this repository to ~/.config/nvim:**
    ```sh
-   git clone https://github.com/your-username/nvim-config.git ~/.config/nvim
+   git clone https://github.com/DCPR01/nvim-config.git ~/.config/nvim
    ```
 
 3. **Open Neovim and install plugins:**
