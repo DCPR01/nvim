@@ -28,6 +28,7 @@ return {
         dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
         dashboard.button("t", "  Find Text", ":Telescope live_grep<CR>"),
         dashboard.button("l", "󰒲  Lazy.nvim", ":Lazy<CR>"), -- ✅ New Lazy.nvim button
+        dashboard.button("t", "  Terminal", ":terminal<CR>"),
         dashboard.button("q", "  Quit", ":qa<CR>"),
     }
 
