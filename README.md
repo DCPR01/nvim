@@ -60,7 +60,7 @@ This setup includes **custom keybindings**, managed by `which-key.nvim`.
 | Key | Action |
 |-----|--------|
 | `Ctrl + O` | Open Oil.nvim (File Explorer) |
-| `Ctrl + P` | Find files (Telescope) |
+| `Ctrl + CR` | Change to current directory (Oil) |
 | `<leader>fg` | Live Grep (Telescope) |
 | `<leader>fb` | Find Buffers (Telescope) |
 | `<leader>m` | Open Mason (LSP Installer) |
