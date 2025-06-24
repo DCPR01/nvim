@@ -59,7 +59,7 @@ This setup includes **custom keybindings**, managed by `which-key.nvim`.
 
 | Key | Action |
 |-----|--------|
-| `Ctrl + O` | Open Oil.nvim (File Explorer) |
+| `Ctrl + o` | Open Oil.nvim (File Explorer) |
 | `Ctrl + CR` | Change to current directory (Oil) |
 | `<leader>fg` | Live Grep (Telescope) |
 | `<leader>fb` | Find Buffers (Telescope) |
@@ -68,11 +68,11 @@ This setup includes **custom keybindings**, managed by `which-key.nvim`.
 | `K` | Hover Info (LSP) |
 | `gd` | Go to Definition (LSP) |
 | `<leader>rn` | Rename Symbol (LSP) |
-| `Ctrl + A` | Open Alpha Dashboard |
-| `Ctrl + W` | Toggle Which-Key (ON/OFF) |
-| `Ctrl + J` | Add Cursor Below |
-| `Ctrl + K` | Add Cursor Above |
-| `Ctrl + N` | Select next match (Visual Multi) |
+| `Ctrl + a` | Open Alpha Dashboard |
+| `Ctrl + w` | Toggle Which-Key (ON/OFF) |
+| `Ctrl + j` | Add Cursor Below |
+| `Ctrl + k` | Add Cursor Above |
+| `Ctrl + n` | Select next match (Visual Multi) |
 | `Ctrl + /` | Comment toggle |
 
 ---
