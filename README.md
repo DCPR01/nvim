@@ -29,6 +29,8 @@ This repository contains a **modular Neovim configuration** using Lazy.nvim as t
 
 ---
 
+⚠️ --  Before attempting to install this nvim config, ensure that unzip, npm, clang are all installed.  --  ⚠️
+
 ## 📦 **Installed Plugins**
 This setup is **plugin-based**, meaning all configurations are modular and installed through Lazy.nvim.
 
