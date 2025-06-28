@@ -1,7 +1,7 @@
 return {
     {
         "williamboman/mason.nvim",
-        build = ":MasonUpdate", -- Auto-update Mason registry
+        build = ":MasonUpdate",
         config = function()
             require("mason").setup()
         end
@@ -12,7 +12,14 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
-                    "lua_ls", "clangd", "cmake", "cssls", "html", "pyright", "bashls" -- ✅ Includes Bash, HTML, and CSS LSPs
+                    "lua_ls",
+                    "pyright",
+                    "bashls",
+                    "html",
+                    "clangd",
+                    "yamlls",
+                    "dockerls",
+                    "docker_compose_language_service"
                 }
             })
         end
@@ -23,15 +30,15 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
 
-            -- ✅ Lua Language Server
+            -- Lua
             lspconfig.lua_ls.setup({})
 
-            -- ✅ Python LSP (Pyright)
+            -- Python
             lspconfig.pyright.setup({
                 settings = {
                     python = {
                         analysis = {
-                            typeCheckingMode = "basic", -- Options: "off", "basic", "strict"
+                            typeCheckingMode = "basic",
                             autoImportCompletions = true,
                             useLibraryCodeForTypes = true,
                         },
@@ -39,24 +46,28 @@ return {
                 },
             })
 
-            -- ✅ C/C++ LSP (Clangd)
-            lspconfig.clangd.setup({})
-
-            -- ✅ HTML LSP
-            lspconfig.html.setup({})
-
-            -- ✅ CSS LSP
-            lspconfig.cssls.setup({})
-
-            -- ✅ Bash LSP
+            -- Bash
             lspconfig.bashls.setup({})
 
-            -- ✅ Keybindings for LSP
+            -- HTML
+            lspconfig.html.setup({})
+
+            -- C/C++
+            lspconfig.clangd.setup({})
+
+            -- YAML
+            lspconfig.yamlls.setup({})
+
+            -- Docker
+            lspconfig.dockerls.setup({})
+            lspconfig.docker_compose_language_service.setup({})
+
+            -- Keymaps
             local opts = { noremap = true, silent = true }
-            vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts) -- Show hover info
-            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts) -- Go to definition
-            vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts) -- Show references
-            vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts) -- Rename variable
+            vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+            vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+            vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
         end
     }
 }
