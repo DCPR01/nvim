@@ -114,6 +114,9 @@ To install this Neovim setup, follow these steps:
 ## 🔄 **Troubleshooting**
 If something isn't working as expected:
 
+Check the path Neovim is referencing for its config:
+   :echo stdpath("config")
+
 1. **Update all plugins:**
    ```sh
    nvim
